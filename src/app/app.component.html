@@ -9,14 +9,13 @@
 <mat-drawer-container class="drawer-container">
   <mat-drawer mode="side" #drawer opened>
     <mat-action-list>
-      <button mat-list-item>Dashboard</button>
-      <button mat-list-item>Market</button>
-      <button mat-list-item>About</button>
+      <button mat-list-item routerLink="/collections">Collections</button>
+      <button mat-list-item routerLink="/routines">Routines</button>
+      <button mat-list-item routerLink="/market">Market</button>
+      <button mat-list-item routerLink="/about">About</button>
     </mat-action-list>
   </mat-drawer>
   <mat-drawer-content>
-    <div class="main">
-      <h1>Hello</h1>
-    </div>
+    <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

@@ -24,7 +24,6 @@
 		"vscode": {
 			"extensions": [
 				"dbaeumer.vscode-eslint",
-				"johnpapa.Angular2",
 				"Angular.ng-template",
 				"streetsidesoftware.code-spell-checker",
 				"esbenp.prettier-vscode"
