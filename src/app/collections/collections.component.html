@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <span>Collections</span>
+  <span i18n>Collections</span>
   <span class="spacer"></span>
   <mat-button-toggle-group
     [ngModel]="activeCollection()"
@@ -28,7 +28,7 @@
         <mat-list-option [value]="routine.id">
           <div class="routine__list-line">
             <span class="routine__name">
-              {{ routine.name }}
+              {{ routine.displayName }}
             </span>
           </div>
         </mat-list-option>

@@ -3,16 +3,18 @@
     <mat-icon fontIcon="menu" />
   </button>
   <span class="spacer"></span>
-  <span i18n>Right</span>
+  <button mat-icon-button>
+    <mat-icon fontIcon="help" />
+  </button>
 </mat-toolbar>
 
 <mat-drawer-container class="drawer-container">
   <mat-drawer mode="side" #drawer opened>
     <mat-action-list>
-      <button mat-list-item routerLink="/collections">Collections</button>
-      <button mat-list-item routerLink="/routines">Routines</button>
-      <button mat-list-item routerLink="/market">Market</button>
-      <button mat-list-item routerLink="/about">About</button>
+      <button i18n mat-list-item routerLink="/collections">Collections</button>
+      <button i18n mat-list-item routerLink="/routines">Routines</button>
+      <button i18n mat-list-item routerLink="/market">Market</button>
+      <button i18n mat-list-item routerLink="/about">About</button>
     </mat-action-list>
   </mat-drawer>
   <mat-drawer-content>

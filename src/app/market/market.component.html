@@ -1,1 +1,46 @@
-<p>market works!</p>
+<mat-toolbar>
+  <span i18n>Routines</span>
+  <span class="spacer"></span>
+  <button mat-icon-button (click)="refreshRoutines()">
+    <mat-icon fontIcon="refresh"></mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-card appearance="outlined" class="routine__card">
+  <mat-card-content>
+    <mat-list>
+      @for (routine of routines(); track $index) {
+        @if (!$first) {
+          <mat-divider></mat-divider>
+        }
+        <mat-list-item>
+          <div matListItemTitle>
+            {{ routine.displayName }} ({{ routine.version | semver }})
+          </div>
+          <div matListItemLine class="routine__list-line">
+            <span class="routine__name">
+              {{ routine.description }}
+            </span>
+            <span class="spacer"></span>
+            <span class="routine__actions">
+              @if (routine.downloaded) {
+                <button mat-icon-button>
+                  <mat-icon fontIcon="download_done"></mat-icon>
+                </button>
+              } @else {
+                <button mat-icon-button (click)="downloadRoutine(routine.id)">
+                  <mat-icon fontIcon="download"></mat-icon>
+                </button>
+              }
+              <button mat-icon-button>
+                <mat-icon fontIcon="more_vert"></mat-icon>
+              </button>
+            </span>
+          </div>
+        </mat-list-item>
+      } @empty {
+        <mat-list-item i18n> No routines found </mat-list-item>
+      }
+    </mat-list>
+  </mat-card-content>
+</mat-card>

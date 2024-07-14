@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "ng build",
+    "build": "ng build --configuration production",
+    "extract-i18n": "ng extract-i18n",
     "lint": "ng lint",
     "lint:fix": "ng lint --fix",
     "ng": "ng",

@@ -1,0 +1,18 @@
+.routine__card {
+  max-width: 40em;
+  margin: 1em auto;
+}
+
+.routine__list-line {
+  display: flex;
+}
+
+.routine__name {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.spacer {
+  margin: 0 auto;
+}

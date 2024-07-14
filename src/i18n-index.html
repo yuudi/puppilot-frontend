@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title i18n>Puppilot</title>
+    <link rel="icon" href="data:;" />
+    <script>
+      // ES3 compatible
+      (function () {
+        savedLanguage = localStorage.getItem("rwa-language");
+        if (savedLanguage) {
+          window.location.href = "./" + savedLanguage + "/";
+          return;
+        }
+        available = ["en-US", "zh-CN"];
+        preference = navigator.languages;
+        for (i = 0; i < preference.length; i++) {
+          for (j = 0; j < available.length; j++) {
+            if (
+              available[j].substring(0, preference[i].length) == preference[i]
+            ) {
+              window.location.href = "./" + available[j] + "/";
+              return;
+            }
+          }
+        }
+        window.location.href = "./en-US/";
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript i18n>
+      Please enable JavaScript to continue using this application.
+    </noscript>
+  </body>
+</html>

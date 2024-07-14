@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <span>Routines</span>
+  <span i18n>Routines</span>
   <span class="spacer"></span>
   <button mat-icon-button (click)="refreshRoutines()">
     <mat-icon fontIcon="refresh"></mat-icon>
@@ -16,7 +16,7 @@
         <mat-list-item>
           <div class="routine__list-line">
             <span class="routine__name">
-              {{ routine.name }}
+              {{ routine.displayName }}
             </span>
             <span class="spacer"></span>
             <span class="routine__actions">

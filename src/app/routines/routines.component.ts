@@ -27,8 +27,8 @@ import { RoutinesService } from './routines.service';
   styleUrl: './routines.component.scss',
 })
 export class RoutinesComponent implements OnInit {
-  routines!: Signal<ApiGetRoutines['routines']>;
-  sails!: Signal<Record<number, ApiGetSailsSailId | null>>;
+  routines: Signal<ApiGetRoutines['routines']>;
+  sails: Signal<Record<number, ApiGetSailsSailId | null>>;
   constructor(private routinesService: RoutinesService) {
     this.routines = routinesService.routines;
     this.sails = routinesService.sails;
