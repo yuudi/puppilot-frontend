@@ -1,13 +1,13 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  OnInit,
+  Signal,
+  WritableSignal,
   computed,
   effect,
-  OnInit,
   signal,
-  Signal,
   viewChild,
-  WritableSignal,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -61,12 +61,12 @@ export class CollectionsComponent implements OnInit {
       return this.collections()[activeCollection] ?? [];
     });
     effect(() => {
-      const routineSelection = this.routineSelection();
-      if (!routineSelection) {
-        throw new Error('selection viewchild not found');
+      const options = this.routineSelection()?.options;
+      if (!options) {
+        return;
       }
       const routineSelected = this.routineSelected();
-      for (const option of routineSelection.options) {
+      for (const option of options) {
         option.selected = routineSelected.includes(option.value);
       }
     });
@@ -76,18 +76,11 @@ export class CollectionsComponent implements OnInit {
     this.routinesService.fetchRoutines();
   }
 
-  selectionChanged() {
-    const routineSelection = this.routineSelection();
-    if (!routineSelection) {
-      throw new Error('selection viewchild not found');
-    }
+  selectionChanged(newSelection: string[]) {
     const activeCollection = this.activeCollection();
     if (!activeCollection) {
       throw new Error('activeCollection is null in selectionChanged');
     }
-    const newSelection = routineSelection.selectedOptions.selected.map<string>(
-      (options) => options.value,
-    );
     this.collectionsService.putToCollection(activeCollection, newSelection);
   }
 
@@ -95,5 +88,9 @@ export class CollectionsComponent implements OnInit {
     const name = prompt('Enter collection name'); // TODO: use a dialog
     if (!name) return;
     this.collectionsService.addCollection(name);
+  }
+
+  startRoutines(routines: string[]) {
+    this.routinesService.startRoutines(routines).subscribe();
   }
 }
