@@ -16,8 +16,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule, MatSelectionList } from '@angular/material/list';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 import { RoutinesService } from '../routines/routines.service';
+import { SailWatcherComponent } from '../sail-watcher/sail-watcher.component';
 import { ApiGetRoutines } from '../types';
 import { CollectionsService } from './collections.service';
 
@@ -26,6 +29,7 @@ import { CollectionsService } from './collections.service';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
+    RouterModule,
     FormsModule,
     MatIconModule,
     MatToolbarModule,
@@ -47,6 +51,7 @@ export class CollectionsComponent implements OnInit {
   routineSelected: Signal<string[]>;
 
   constructor(
+    private snackBar: MatSnackBar,
     private collectionsService: CollectionsService,
     private routinesService: RoutinesService,
   ) {
@@ -91,6 +96,10 @@ export class CollectionsComponent implements OnInit {
   }
 
   startRoutines(routines: string[]) {
-    this.routinesService.startRoutines(routines).subscribe();
+    this.routinesService.startRoutines(routines).subscribe((data) => {
+      this.snackBar.openFromComponent(SailWatcherComponent, {
+        data,
+      });
+    });
   }
 }

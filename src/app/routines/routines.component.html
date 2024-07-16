@@ -30,7 +30,9 @@
           </div>
         </mat-list-item>
       } @empty {
-        <mat-list-item i18n> No routines found </mat-list-item>
+        <mat-list-item i18n>
+          No routines found, Go to <a routerLink="/market">Market</a>
+        </mat-list-item>
       }
     </mat-list>
   </mat-card-content>

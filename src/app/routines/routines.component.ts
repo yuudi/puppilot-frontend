@@ -8,7 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
+import { SailWatcherComponent } from '../sail-watcher/sail-watcher.component';
 import { ApiGetRoutines, ApiGetSailsSailId } from '../types';
 import { RoutinesService } from './routines.service';
 
@@ -17,6 +20,7 @@ import { RoutinesService } from './routines.service';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
+    RouterModule,
     MatIconModule,
     MatButtonModule,
     MatCardModule,
@@ -29,7 +33,10 @@ import { RoutinesService } from './routines.service';
 export class RoutinesComponent implements OnInit {
   routines: Signal<ApiGetRoutines['routines']>;
   sails: Signal<Record<number, ApiGetSailsSailId | null>>;
-  constructor(private routinesService: RoutinesService) {
+  constructor(
+    private snackBar: MatSnackBar,
+    private routinesService: RoutinesService,
+  ) {
     this.routines = routinesService.routines;
     this.sails = routinesService.sails;
   }
@@ -39,8 +46,10 @@ export class RoutinesComponent implements OnInit {
   }
 
   startRoutines(routines: string[]) {
-    this.routinesService.startRoutines(routines).subscribe(() => {
-      void 0;
+    this.routinesService.startRoutines(routines).subscribe((data) => {
+      this.snackBar.openFromComponent(SailWatcherComponent, {
+        data,
+      });
     });
   }
 

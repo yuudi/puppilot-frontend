@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class AboutComponent {}
+export class AboutComponent {
+  version = '0.1.0'; // TODO: inject version while building
+}

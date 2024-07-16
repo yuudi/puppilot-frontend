@@ -3,6 +3,16 @@
   margin: 1em auto;
 }
 
+.routine__run-button-container {
+  display: flex;
+  max-width: 40em;
+  margin: 1em auto;
+}
+
+.routine__run-button {
+  margin-left: auto;
+}
+
 .routine__list-line {
   display: flex;
 }

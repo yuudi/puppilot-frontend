@@ -1,11 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, Signal, signal } from '@angular/core';
-import {
-  ApiGetRoutines,
-  ApiGetSails,
-  ApiGetSailsSailId,
-  ApiPostSails,
-} from '../types';
+import { tap } from 'rxjs';
+import { ApiGetRoutines, ApiGetSailsSailId, ApiPostSails } from '../types';
 
 @Injectable({
   providedIn: 'root',
@@ -41,25 +37,17 @@ export class RoutinesService {
     return this.http.post<ApiPostSails>('/api/v0/sails', { routines });
   }
 
-  fetchSails() {
-    this.http.get<ApiGetSails>('/api/v0/sails').subscribe((data) => {
-      for (const sail of data.sails) {
-        this.#sails.update((sails) => {
-          sails[sail.id] = sails[sail.id] || null;
-          return sails;
-        });
-      }
-    });
-  }
+  // fetchSails() {
+  //   this.http.get<ApiGetSails>('/api/v0/sails').subscribe();
+  // }
 
-  fetchSail(sailId: number) {
-    this.http
-      .get<ApiGetSailsSailId>(`/api/v0/sails/${sailId}`)
-      .subscribe((data) => {
+  fetchSail(sailId: string) {
+    return this.http.get<ApiGetSailsSailId>(`/api/v0/sails/${sailId}`).pipe(
+      tap((data) => {
         this.#sails.update((sails) => {
-          sails[sailId] = data;
-          return sails;
+          return { ...sails, [sailId]: data };
         });
-      });
+      }),
+    );
   }
 }

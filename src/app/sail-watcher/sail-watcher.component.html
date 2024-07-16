@@ -1,0 +1,40 @@
+<span>
+  @if (sailStatus(); as sail) {
+    {{ sail.status }} ({{ sail.done }}/{{ sail.total }})
+    <ng-container i18n> done </ng-container>
+    @for (job of sail.jobs; track $index) {
+      <br />
+      @switch (job.status) {
+        @case ("processing") {
+          <mat-icon fontIcon="schedule"></mat-icon>
+          <ng-container i18n> running </ng-container>
+        }
+        @case ("queued") {
+          <mat-icon fontIcon="schedule"></mat-icon>
+          <ng-container i18n> queued </ng-container>
+        }
+        @case ("error") {
+          <mat-icon fontIcon="warning"></mat-icon>
+          {{ job.message }}
+        }
+        @case ("warning") {
+          <mat-icon fontIcon="exclamation"></mat-icon>
+          {{ job.message }}
+        }
+        @case ("success") {
+          <mat-icon fontIcon="check"></mat-icon>
+          {{ job.message }}
+        }
+        @case ("dismissed") {
+          <mat-icon fontIcon="remove"></mat-icon>
+          {{ job.message }}
+        }
+        @default {
+          <ng-container i18n> unknown </ng-container>
+        }
+      }
+    }
+  } @else {
+    <ng-container i18n> loading </ng-container>
+  }
+</span>

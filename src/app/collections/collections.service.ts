@@ -15,35 +15,27 @@ export class CollectionsService {
 
   addCollection(name: string) {
     this.#collections.update((collections) => {
-      // collections[name] = [];
-      // return collections;
-      return { ...collections, [name]: [] }; // signal compatibility
+      return { ...collections, [name]: [] };
     });
   }
 
   removeCollection(name: string) {
     this.#collections.update((collections) => {
-      // delete collections[name];
-      // return collections;
       const { [name]: _, ...rest } = collections;
       void _;
-      return rest; // signal compatibility
+      return rest;
     });
   }
 
   addToCollection(name: string, routine: string[]) {
     this.#collections.update((collections) => {
-      // collections[name].push(...routine);
-      // return collections;
-      return { ...collections, [name]: [...collections[name], ...routine] }; // signal compatibility
+      return { ...collections, [name]: [...collections[name], ...routine] };
     });
   }
 
   putToCollection(name: string, routine: string[]) {
     this.#collections.update((collections) => {
-      // collections[name] = routine;
-      // return collections;
-      return { ...collections, [name]: routine }; // signal compatibility
+      return { ...collections, [name]: routine };
     });
   }
 }

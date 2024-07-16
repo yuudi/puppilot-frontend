@@ -2,6 +2,41 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="5729453128441818750" datatype="html">
+        <source>about puppilot</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">2,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5968304179992984268" datatype="html">
+        <source>version:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4989120749046235678" datatype="html">
+        <source>GitHub:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1829075110397692632" datatype="html">
+        <source>QQ group (Chinese speaking):</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5547833697206565654" datatype="html">
+        <source>Discord group (Multi-language):</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5968366500418000730" datatype="html">
         <source>Collections</source>
         <context-group purpose="location">
@@ -42,19 +77,29 @@
           <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="9035871162113326881" datatype="html">
-        <source> No routines found </source>
+      <trans-unit id="4277101249758556345" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Run Selected </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/collections/collections.component.html</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">27,30</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="1146855552810782935" datatype="html">
+        <source> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;&gt;"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/market/market.component.html</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="sourcefile">src/app/collections/collections.component.html</context>
+          <context context-type="linenumber">51,52</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/routines/routines.component.html</context>
-          <context context-type="linenumber">33</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9035871162113326881" datatype="html">
+        <source> No routines found </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
     </body>
