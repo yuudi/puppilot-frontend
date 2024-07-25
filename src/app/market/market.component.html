@@ -1,7 +1,12 @@
 <mat-toolbar>
   <span i18n>Routines</span>
   <span class="spacer"></span>
-  <button mat-icon-button (click)="refreshRoutines()">
+  <button
+    mat-icon-button
+    i18n-matTooltip
+    matTooltip="Refresh"
+    (click)="refreshRoutines()"
+  >
     <mat-icon fontIcon="refresh"></mat-icon>
   </button>
 </mat-toolbar>
@@ -24,17 +29,37 @@
             <span class="spacer"></span>
             <span class="routine__actions">
               @if (routine.downloaded) {
-                <button mat-icon-button>
+                <button
+                  mat-icon-button
+                  i18n-matTooltip
+                  matTooltip="Downloaded"
+                  disabled
+                >
                   <mat-icon fontIcon="download_done"></mat-icon>
                 </button>
               } @else {
-                <button mat-icon-button (click)="downloadRoutine(routine.id)">
+                <button
+                  mat-icon-button
+                  i18n-matTooltip
+                  matTooltip="Download"
+                  (click)="downloadRoutine(routine.id)"
+                >
                   <mat-icon fontIcon="download"></mat-icon>
                 </button>
               }
-              <button mat-icon-button>
+              <button
+                mat-icon-button
+                i18n-matTooltip
+                matTooltip="More"
+                [matMenuTriggerFor]="more"
+              >
                 <mat-icon fontIcon="more_vert"></mat-icon>
               </button>
+              <mat-menu #more="matMenu">
+                <button mat-menu-item i18n (click)="showInfo(routine.id)">
+                  Information
+                </button>
+              </mat-menu>
             </span>
           </div>
         </mat-list-item>

@@ -21,7 +21,7 @@ export type SailJobStatus =
       status: 'processing' | 'queued';
     };
 
-interface ApiRoutine {
+export interface ApiRoutine {
   id: string;
   displayName: string;
   version: string | number | (number | string)[];

@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>{{ data.displayName }}</h2>
+<mat-dialog-content>
+  <table>
+    <tbody>
+      <tr>
+        <td class="info__field" i18n>ID</td>
+        <td>{{ data.id }}</td>
+      </tr>
+      <tr>
+        <td class="info__field" i18n>Version</td>
+        <td>{{ data.version | semver }}</td>
+      </tr>
+      @if (data.author) {
+        <tr>
+          <td class="info__field" i18n>Author</td>
+          <td>{{ data.author }}</td>
+        </tr>
+      }
+      @if (data.description) {
+        <tr>
+          <td class="info__field" i18n>Description</td>
+          <td>{{ data.description }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button [mat-dialog-close] cdkFocusInitial i18n>Close</button>
+</mat-dialog-actions>

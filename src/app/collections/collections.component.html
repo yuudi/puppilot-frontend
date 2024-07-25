@@ -4,12 +4,19 @@
   <mat-button-toggle-group
     [ngModel]="activeCollection()"
     (ngModelChange)="activeCollection.set($event)"
+    i18n-matTooltip
+    matTooltip="Choose Collection"
   >
     @for (name of collectionNames(); track $index) {
       <mat-button-toggle [value]="name">{{ name }}</mat-button-toggle>
     }
   </mat-button-toggle-group>
-  <button mat-icon-button (click)="addCollection()">
+  <button
+    mat-icon-button
+    i18n-matTooltip
+    matTooltip="New Collection"
+    (click)="addCollection()"
+  >
     <mat-icon fontIcon="add"></mat-icon>
   </button>
   <span class="spacer"></span>

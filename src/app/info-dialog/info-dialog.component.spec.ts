@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SailWatcherComponent } from './sail-watcher.component';
+import { InfoDialogComponent } from './info-dialog.component';
 
-describe('SailWatcherComponent', () => {
-  let component: SailWatcherComponent;
-  let fixture: ComponentFixture<SailWatcherComponent>;
+describe('InfoDialogComponent', () => {
+  let component: InfoDialogComponent;
+  let fixture: ComponentFixture<InfoDialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SailWatcherComponent],
+      imports: [InfoDialogComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(SailWatcherComponent);
+    fixture = TestBed.createComponent(InfoDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

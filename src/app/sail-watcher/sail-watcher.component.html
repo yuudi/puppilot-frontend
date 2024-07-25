@@ -1,7 +1,22 @@
 <span>
   @if (sailStatus(); as sail) {
-    {{ sail.status }} ({{ sail.done }}/{{ sail.total }})
-    <ng-container i18n> done </ng-container>
+    <span>
+      {{ sail.status }} ({{ sail.done }}/{{ sail.total }})
+      <ng-container i18n> done </ng-container>
+      <span class="spacer"></span>
+      @if (sail.status === "completed") {
+        <span matSnackBarActions>
+          <button
+            mat-button
+            i18n-matTooltip
+            matTooltip="Close"
+            (click)="snackBarRef.dismissWithAction()"
+          >
+            ❌
+          </button>
+        </span>
+      }
+    </span>
     @for (job of sail.jobs; track $index) {
       <br />
       @switch (job.status) {

@@ -90,6 +90,15 @@
             "outputPath": "src/locale"
           }
         },
+        "extract-i18n-merge": {
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
+          "options": {
+            "buildTarget": "puppilot-frontend:build",
+            "format": "xlf",
+            "outputPath": "src/locale",
+            "targetFiles": ["messages.zh-CN.xlf"]
+          }
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {

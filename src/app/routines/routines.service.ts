@@ -37,6 +37,16 @@ export class RoutinesService {
     return this.http.post<ApiPostSails>('/api/v0/sails', { routines });
   }
 
+  deleteRoutine(routineId: string) {
+    this.http.delete('/api/v0/routines/' + routineId).subscribe(() => {
+      this.#routines.update((routines) => {
+        const index = routines.findIndex((routine) => routine.id === routineId);
+        routines.splice(index, 1);
+        return [...routines];
+      });
+    });
+  }
+
   // fetchSails() {
   //   this.http.get<ApiGetSails>('/api/v0/sails').subscribe();
   // }

@@ -1,7 +1,12 @@
 <mat-toolbar>
   <span i18n>Routines</span>
   <span class="spacer"></span>
-  <button mat-icon-button (click)="refreshRoutines()">
+  <button
+    mat-icon-button
+    i18n-matTooltip
+    matTooltip="Refresh"
+    (click)="refreshRoutines()"
+  >
     <mat-icon fontIcon="refresh"></mat-icon>
   </button>
 </mat-toolbar>
@@ -20,12 +25,30 @@
             </span>
             <span class="spacer"></span>
             <span class="routine__actions">
-              <button mat-icon-button (click)="startRoutines([routine.id])">
+              <button
+                mat-icon-button
+                i18n-matTooltip
+                matTooltip="Start"
+                (click)="startRoutines([routine.id])"
+              >
                 <mat-icon fontIcon="play_circle"></mat-icon>
               </button>
-              <button mat-icon-button>
+              <button
+                mat-icon-button
+                i18n-matTooltip
+                matTooltip="More"
+                [matMenuTriggerFor]="more"
+              >
                 <mat-icon fontIcon="more_vert"></mat-icon>
               </button>
+              <mat-menu #more="matMenu">
+                <button mat-menu-item i18n (click)="showInfo(routine.id)">
+                  Information
+                </button>
+                <button mat-menu-item i18n (click)="deleteRoutine(routine.id)">
+                  Delete
+                </button>
+              </mat-menu>
             </span>
           </div>
         </mat-list-item>

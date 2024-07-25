@@ -77,29 +77,178 @@
           <context context-type="linenumber">17,18</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7034335509444628346" datatype="html">
+        <source>Choose Collection</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collections/collections.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8346585071068558109" datatype="html">
+        <source>New Collection</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/collections/collections.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4277101249758556345" datatype="html">
         <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Run Selected </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/collections/collections.component.html</context>
-          <context context-type="linenumber">27,30</context>
+          <context context-type="linenumber">34,37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1146855552810782935" datatype="html">
         <source> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;&gt;"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/collections/collections.component.html</context>
-          <context context-type="linenumber">51,52</context>
+          <context context-type="linenumber">58,59</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/routines/routines.component.html</context>
-          <context context-type="linenumber">34,35</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8040881171107393560" datatype="html">
+        <source>ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info-dialog/info-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2724055831234181057" datatype="html">
+        <source>Version</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info-dialog/info-dialog.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7071470734400948493" datatype="html">
+        <source>Author</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info-dialog/info-dialog.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info-dialog/info-dialog.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info-dialog/info-dialog.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sail-watcher/sail-watcher.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1102717806459547726" datatype="html">
+        <source>Refresh</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
+          <context context-type="linenumber">7,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1348653009995405244" datatype="html">
+        <source>Downloaded</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">35,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3099741642167775297" datatype="html">
+        <source>Download</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">44,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html">
+        <source>More</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8053112597838974707" datatype="html">
+        <source> Information </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
+          <context context-type="linenumber">46</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9035871162113326881" datatype="html">
         <source> No routines found </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/market/market.component.html</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5162686434580248853" datatype="html">
+        <source>Start</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6660925946511264619" datatype="html">
+        <source> Delete </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="49911973192449045" datatype="html">
+        <source> done </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sail-watcher/sail-watcher.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3812633698813511795" datatype="html">
+        <source> running </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sail-watcher/sail-watcher.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5672548848308825833" datatype="html">
+        <source> queued </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sail-watcher/sail-watcher.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="150426260055745501" datatype="html">
+        <source> unknown </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sail-watcher/sail-watcher.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3194175824126057596" datatype="html">
+        <source> loading </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/sail-watcher/sail-watcher.component.html</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
     </body>

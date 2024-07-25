@@ -1,66 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template" target-language="zh-Hans">
+  <file source-language="en-US" target-language="zh-Hans" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="5968366500418000730" datatype="html">
         <source>Collections</source>
         <target state="translated">收藏</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">14,15</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/collections/collections.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="5122994003394006247" datatype="html">
         <source>Routines</source>
         <target state="translated">脚本</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">15,16</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/market/market.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
-          <context context-type="linenumber">2,3</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="6367751413467188072" datatype="html">
         <source>Market</source>
         <target state="translated">市场</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">16,17</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="1726363342938046830" datatype="html">
         <source>About</source>
         <target state="translated">关于</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">17,18</context>
-        </context-group>
       </trans-unit>
       <trans-unit id="9035871162113326881" datatype="html">
         <source> No routines found </source>
         <target state="translated"> 未找到脚本 </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/collections/collections.component.html</context>
-          <context context-type="linenumber">36</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/market/market.component.html</context>
-          <context context-type="linenumber">42</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/routines/routines.component.html</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
+      </trans-unit>
+      <trans-unit id="5729453128441818750" datatype="html">
+        <source>about puppilot</source>
+        <target state="new">about puppilot</target>
+      </trans-unit>
+      <trans-unit id="5968304179992984268" datatype="html">
+        <source>version:</source>
+        <target state="new">version:</target>
+      </trans-unit>
+      <trans-unit id="4989120749046235678" datatype="html">
+        <source>GitHub:</source>
+        <target state="new">GitHub:</target>
+      </trans-unit>
+      <trans-unit id="1829075110397692632" datatype="html">
+        <source>QQ group (Chinese speaking):</source>
+        <target state="new">QQ group (Chinese speaking):</target>
+      </trans-unit>
+      <trans-unit id="5547833697206565654" datatype="html">
+        <source>Discord group (Multi-language):</source>
+        <target state="new">Discord group (Multi-language):</target>
+      </trans-unit>
+      <trans-unit id="7034335509444628346" datatype="html">
+        <source>Choose Collection</source>
+        <target state="new">Choose Collection</target>
+      </trans-unit>
+      <trans-unit id="8346585071068558109" datatype="html">
+        <source>New Collection</source>
+        <target state="translated">新收藏</target>
+      </trans-unit>
+      <trans-unit id="4277101249758556345" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;>"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon>"/> Run Selected </source>
+        <target state="new"><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;>"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon>"/> Run Selected </target>
+      </trans-unit>
+      <trans-unit id="1146855552810782935" datatype="html">
+        <source> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;>"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></source>
+        <target state="new"> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;>"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></target>
+      </trans-unit>
+      <trans-unit id="8040881171107393560" datatype="html">
+        <source>ID</source>
+        <target state="new">ID</target>
+      </trans-unit>
+      <trans-unit id="2724055831234181057" datatype="html">
+        <source>Version</source>
+        <target state="new">Version</target>
+      </trans-unit>
+      <trans-unit id="7071470734400948493" datatype="html">
+        <source>Author</source>
+        <target state="new">Author</target>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <target state="new">Description</target>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <target state="new">Close</target>
+      </trans-unit>
+      <trans-unit id="1102717806459547726" datatype="html">
+        <source>Refresh</source>
+        <target state="translated">刷新</target>
+      </trans-unit>
+      <trans-unit id="1348653009995405244" datatype="html">
+        <source>Downloaded</source>
+        <target state="new">Downloaded</target>
+      </trans-unit>
+      <trans-unit id="3099741642167775297" datatype="html">
+        <source>Download</source>
+        <target state="translated">下载</target>
+      </trans-unit>
+      <trans-unit id="5937251202465808296" datatype="html">
+        <source>More</source>
+        <target state="new">More</target>
+      </trans-unit>
+      <trans-unit id="8053112597838974707" datatype="html">
+        <source> Information </source>
+        <target state="new"> Information </target>
+      </trans-unit>
+      <trans-unit id="5162686434580248853" datatype="html">
+        <source>Start</source>
+        <target state="new">Start</target>
+      </trans-unit>
+      <trans-unit id="6660925946511264619" datatype="html">
+        <source> Delete </source>
+        <target state="new"> Delete </target>
+      </trans-unit>
+      <trans-unit id="49911973192449045" datatype="html">
+        <source> done </source>
+        <target state="new"> done </target>
+      </trans-unit>
+      <trans-unit id="3812633698813511795" datatype="html">
+        <source> running </source>
+        <target state="new"> running </target>
+      </trans-unit>
+      <trans-unit id="5672548848308825833" datatype="html">
+        <source> queued </source>
+        <target state="translated">排队</target>
+      </trans-unit>
+      <trans-unit id="150426260055745501" datatype="html">
+        <source> unknown </source>
+        <target state="new"> unknown </target>
+      </trans-unit>
+      <trans-unit id="3194175824126057596" datatype="html">
+        <source> loading </source>
+        <target state="new"> loading </target>
       </trans-unit>
     </body>
   </file>

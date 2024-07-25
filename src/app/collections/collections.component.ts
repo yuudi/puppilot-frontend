@@ -18,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule, MatSelectionList } from '@angular/material/list';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
 import { RoutinesService } from '../routines/routines.service';
 import { SailWatcherComponent } from '../sail-watcher/sail-watcher.component';
@@ -32,6 +33,7 @@ import { CollectionsService } from './collections.service';
     RouterModule,
     FormsModule,
     MatIconModule,
+    MatTooltipModule,
     MatToolbarModule,
     MatButtonModule,
     MatButtonToggleModule,
