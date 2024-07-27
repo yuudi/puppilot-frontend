@@ -51,12 +51,12 @@
         <target state="translated">新收藏</target>
       </trans-unit>
       <trans-unit id="4277101249758556345" datatype="html">
-        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;>"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon>"/> Run Selected </source>
-        <target state="new"><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;>"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon>"/> Run Selected </target>
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Run Selected </source>
+        <target state="new"><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon fontIcon=&quot;play_circle&quot;&gt;"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Run Selected </target>
       </trans-unit>
       <trans-unit id="1146855552810782935" datatype="html">
-        <source> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;>"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></source>
-        <target state="new"> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;>"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/></target>
+        <source> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;&gt;"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="new"> No routines found, Go to <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/market&quot;&gt;"/>Market<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
       </trans-unit>
       <trans-unit id="8040881171107393560" datatype="html">
         <source>ID</source>
@@ -125,6 +125,10 @@
       <trans-unit id="3194175824126057596" datatype="html">
         <source> loading </source>
         <target state="new"> loading </target>
+      </trans-unit>
+      <trans-unit id="8912463304227027633" datatype="html">
+        <source> Didn&apos;t find what you want? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/about&quot;&gt;"/>Discuss in our community<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/> or <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://github.com/puppilot-org/puppilot-routines&quot; target=&quot;_blank&quot; &gt;"/>create your own routine<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/></source>
+        <target state="new"> Didn&apos;t find what you want? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/about&quot;&gt;"/>Discuss in our community<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/> or <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://github.com/puppilot-org/puppilot-routines&quot; target=&quot;_blank&quot; &gt;"/>create your own routine<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/></target>
       </trans-unit>
     </body>
   </file>

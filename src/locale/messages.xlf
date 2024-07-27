@@ -202,6 +202,16 @@
           <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="8912463304227027633" datatype="html">
+        <source> Didn&apos;t find what you want? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/about&quot;&gt;"/>Discuss in our community<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+  &gt;"/> or <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://github.com/puppilot-org/puppilot-routines&quot; target=&quot;_blank&quot;
+    &gt;"/>create your own routine<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
+  &gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/market/market.component.html</context>
+          <context context-type="linenumber">73,79</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5162686434580248853" datatype="html">
         <source>Start</source>
         <context-group purpose="location">

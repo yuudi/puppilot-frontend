@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { RouterModule } from '@angular/router';
 import { InfoDialogComponent } from '../info-dialog/info-dialog.component';
 import { RoutinesService } from '../routines/routines.service';
 import { ApiGetMarketRoutines, ApiGetRoutines } from '../types';
@@ -24,6 +25,7 @@ import { SemverPipe } from './semver.pipe';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
+    RouterModule,
     MatTooltipModule,
     MatToolbarModule,
     MatIconModule,
