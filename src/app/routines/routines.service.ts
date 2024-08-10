@@ -33,8 +33,11 @@ export class RoutinesService {
     });
   }
 
-  startRoutines(routines: string[]) {
-    return this.http.post<ApiPostSails>('/api/v0/sails', { routines });
+  startRoutines(routines: string[], maxParallel = 1) {
+    return this.http.post<ApiPostSails>('/api/v0/sails', {
+      routines,
+      maxParallel,
+    });
   }
 
   deleteRoutine(routineId: string) {

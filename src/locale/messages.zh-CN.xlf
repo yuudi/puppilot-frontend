@@ -30,10 +30,6 @@
         <source>version:</source>
         <target state="translated">版本:</target>
       </trans-unit>
-      <trans-unit id="4989120749046235678" datatype="html">
-        <source>GitHub:</source>
-        <target state="translated">GitHub:</target>
-      </trans-unit>
       <trans-unit id="1829075110397692632" datatype="html">
         <source>QQ group (Chinese speaking):</source>
         <target state="translated">QQ 群（中文）：</target>
@@ -127,8 +123,24 @@
         <target state="translated"> 正在加载 </target>
       </trans-unit>
       <trans-unit id="8912463304227027633" datatype="html">
-        <source> Didn't find what you want? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/about&quot;>"/>Discuss in our community<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a >"/> or <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://github.com/puppilot-org/puppilot-routines&quot; target=&quot;_blank&quot; >"/>create your own routine<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a >"/></source>
+        <source> Didn't find what you want? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/about&quot;>"/>Discuss in our community<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a >"/> or <x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://puppilot.org/Routine.html&quot; target=&quot;_blank&quot; >"/>create your own routine<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a >"/></source>
         <target state="translated"> 找不到你需要的脚本？不妨<x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/about&quot;>"/>加入讨论组<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a >"/>或者<x id="START_LINK_1" equiv-text="&lt;a href=&quot;https://github.com/puppilot-org/puppilot-routines&quot; target=&quot;_blank&quot; >"/>创建你自己的脚本<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a >"/></target>
+      </trans-unit>
+      <trans-unit id="556514109955207276" datatype="html">
+        <source>Document:</source>
+        <target state="translated">文档：</target>
+      </trans-unit>
+      <trans-unit id="8843732145341705863" datatype="html">
+        <source>Source Code:</source>
+        <target state="translated">源代码</target>
+      </trans-unit>
+      <trans-unit id="3696457630139746475" datatype="html">
+        <source>Github Discussion:</source>
+        <target state="translated">Github 讨论：</target>
+      </trans-unit>
+      <trans-unit id="4733200867587342317" datatype="html">
+        <source>Max Parallel Jobs</source>
+        <target state="translated">最大并行</target>
       </trans-unit>
     </body>
   </file>

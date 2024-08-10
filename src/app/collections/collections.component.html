@@ -23,6 +23,16 @@
 </mat-toolbar>
 
 <div class="routine__run-button-container">
+  <mat-form-field>
+    <mat-label i18n>Max Parallel Jobs</mat-label>
+    <input
+      matInput
+      type="number"
+      min="1"
+      [ngModel]="maxParallelRoutine()"
+      (ngModelChange)="maxParallelRoutine.set($event)"
+    />
+  </mat-form-field>
   <button
     i18n
     mat-fab

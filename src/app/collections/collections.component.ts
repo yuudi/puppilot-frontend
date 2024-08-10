@@ -15,6 +15,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatListModule, MatSelectionList } from '@angular/material/list';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -23,6 +24,7 @@ import { RouterModule } from '@angular/router';
 import { RoutinesService } from '../routines/routines.service';
 import { SailWatcherComponent } from '../sail-watcher/sail-watcher.component';
 import { ApiGetRoutines } from '../types';
+import { storage } from '../utils';
 import { CollectionsService } from './collections.service';
 
 @Component({
@@ -35,6 +37,7 @@ import { CollectionsService } from './collections.service';
     MatIconModule,
     MatTooltipModule,
     MatToolbarModule,
+    MatInputModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
@@ -51,6 +54,7 @@ export class CollectionsComponent implements OnInit {
   routines: Signal<ApiGetRoutines['routines']>;
   routineSelection = viewChild<MatSelectionList>('routineSelection');
   routineSelected: Signal<string[]>;
+  maxParallelRoutine = storage('puppilot/max_parallel_job', 1);
 
   constructor(
     private snackBar: MatSnackBar,
@@ -98,10 +102,12 @@ export class CollectionsComponent implements OnInit {
   }
 
   startRoutines(routines: string[]) {
-    this.routinesService.startRoutines(routines).subscribe((data) => {
-      this.snackBar.openFromComponent(SailWatcherComponent, {
-        data,
+    this.routinesService
+      .startRoutines(routines, this.maxParallelRoutine())
+      .subscribe((data) => {
+        this.snackBar.openFromComponent(SailWatcherComponent, {
+          data,
+        });
       });
-    });
   }
 }
